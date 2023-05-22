@@ -13,7 +13,7 @@ function calculate(button) {
         screenDisplay.textContent = '0'
     } else if (value === "=") {
         console.log(accumalativeCalculation);
-        screenDisplay.textContent = eval(accumalativeCalculation)
+        screenDisplay.textContent = eval(accumalativeCalculation).toFixed(2);
     } else {
         calculation.push(value)
         accumalativeCalculation = calculation.join('')
