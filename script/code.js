@@ -1,3 +1,4 @@
+//with reference Ania Kubow [https://youtu.be/8IxIyI3JomE]
 const screenDisplay = document.querySelector('.screen')
 const buttons = document.querySelectorAll('button')
 
@@ -9,7 +10,7 @@ function calculate(button) {
     
     if ( value == "CE"){
         calculation = []
-        screenDisplay.textContent = '.'
+        screenDisplay.textContent = '0'
     } else if (value === "=") {
         console.log(accumalativeCalculation);
         screenDisplay.textContent = eval(accumalativeCalculation)
